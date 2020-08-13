@@ -1,2 +1,1 @@
-# project_10
-patterns
+# https://github.com/kulchaka/project_10
