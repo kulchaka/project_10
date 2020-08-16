@@ -1,5 +1,8 @@
 # https://github.com/kulchaka/project_10
+<<<<<<< HEAD
 
+=======
+>>>>>>> develop
 - validaion form on patterns HTML
 - current version **v0.0.6**
 - publik link: https://kulchaka.github.io/project_10/
