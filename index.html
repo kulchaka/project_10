@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>Regular Expressions</title>
+    <title>RegExr Patterns</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -12,7 +12,7 @@
         src="https://pictures.s3.yandex.net/frontend-developer/dom_bom/logo.svg"
         alt="logo"
       />
-      <p class="header__logo-sub">Регулярные выражения</p>
+      <p class="header__logo-sub">RegExr Patterns</p>
     </header>
     <main class="container">
       <div class="cover">
@@ -26,17 +26,17 @@
           action="http://httpbin.org/post"
           method="POST"
         >
-          <h3>Форма регистрации</h3>
+          <h3>Form registration</h3>
           <fieldset class="form__fieldset">
             <div class="form__field">
               <input
                 class="form__input"
                 type="text"
                 name="name"
-                pattern="[А-ЯЁ]{1}[а-яё]+(-[А-ЯЁ]{1}[а-яё]+)?"
+                pattern="[A-Z]{1}[a-z]+(-[A-Z]{1}[a-z]+)?"
                 minlength="2"
                 maxlength="20"
-                placeholder="Имя"
+                placeholder="Name"
                 required
               />
             </div>
@@ -50,7 +50,7 @@
                 required
               />
               <span class="form__error"
-                >e-mail в формате: students-yandex@yandex.ru</span
+                >form email like: nick_name@mail.com</span
               >
             </div>
             <div class="form__field">
@@ -58,13 +58,13 @@
                 class="form__input"
                 type="text"
                 name="tel"
-                placeholder="Телефон"
+                placeholder="Phone"
                 pattern="(\+?\d{11})?(\+\d\(\d{3}\)\s?\d{3}-\d{2}-\d{2})?(\+\d\s\d{3}-\d{3}-\d{2}-\d{2})?"
                 minlength=""
                 maxlength="18"
                 required
               />
-              <span class="form__error">Недопустимый формат номера</span>
+              <span class="form__error">Invalid number format</span>
             </div>
             <div class="form__field">
               <input
@@ -75,9 +75,9 @@
                 placeholder="Ваш сайт"
                 required
               />
-              <span class="form__error">URL в формате: http://mysite.ru</span>
+              <span class="form__error">URL form: http://mysite.com</span>
             </div>
-            <button class="form__button" type="text">Отправить</button>
+            <button class="form__button" type="text">Send</button>
           </fieldset>
         </form>
       </div>
